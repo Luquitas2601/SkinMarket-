@@ -1,15 +1,151 @@
-<h1>Productos</h1>
-<div class="card-container">
-  <ng-container *ngIf ="Productos && Productos.length">
-    <ng-container *ngFor="let producto of Productos">
-      <div *ngIf ="producto.disponibilidad" class="card">
-        <img [src]="producto.imagen" alt="{{producto.nombre}}" class="product-image">
-        <h2>{{producto.nombre}}</h2>
-        <p>{{producto.descripcion}}</p>
-        <p>Precio: {{producto.precio}}</p>
-        <button type="button" class="btn btn-outline-primary" (click)="agregar(producto)">Agregar al carrito</button>
-      </div>
-    </ng-container>
-  </ng-container>
+<section class="catalogo">
+
+<h2>
+CATÁLOGO DE SKINS
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img
+src="https://community.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL8ypexwjFS4_ega6F_H_OGMWrEwL9lj_F7Rienhgk1tjyIpYPwJiPTcAAoCpsiEO5ZsUbpm9C2Zuni4VHW3o5EzSX62HxP7Sg96-hWVqYi_6TJz1aW0nxrkGs">
+
+<h4>
+M4A1-S | Printstream
+</h4>
+
+<p>
+$148.999
+</p>
+
+<button>
+
+Agregar al carrito
+
+
+</button>
+
 </div>
 
+
+<div class="card">
+
+<img
+src="https://steamcommunity-a.akamaihd.net/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwlcK3wiNQ0OKheqdoLPGaAFicyOl-pK8xGH_nwUt1sGrSz9ivcHKQOAcjXMYkRu5Yuxe4lYCyZOq25VSM2oMT02yg2UxBSEgA/512fx384f">
+
+<h4>
+AK-47 | Inheritance
+</h4>
+
+<p>
+$127.999
+</p>
+
+<button
+>
+
+Agregar al carrito
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://cdn.tradeit.gg/csgo%2FDesert%20Eagle%20-%20Printstream%20(Factory%20New)_650x325.webp">
+
+<h4>
+Desert Eagle | Printstream
+</h4>
+
+<p>
+$55.999
+</p>
+
+<button>
+
+Agregar al carrito
+
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<div class="cards">
+  <div class="card">
+<img src="https://steamcommunity-a.akamaihd.net/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwlcK3wiNQu6WReLFrJvWBMWSF0vp5vd5lRi67gVNz4Tvdn4qoJC3Ba1V1WcdxTbFcsEbpxoHhNunnsVPYitlFm3392C4f8G81tEVBuxrI/512fx384f">
+<h4>AK-47 | The oligarch</h4>
+<p>$140.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_cyrex_light_large.144b4053eb73b4a47f8128ebb0e808d8e28f5b9c.png">
+<h4>M4A4-S | Cyrex</h4>
+<p>$149.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://community.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLkjYbf7itX6vytbbZSI-WsG3SA_v5kue99XD2hkBwqjDGMnYftb3yUPFR0XsNyRrNc5kO5ltziMenr5lONj4kXyi2riywc7y9o5LtQAqQ7uvqAkScWnv4">
+<h4>USP-S | Printstream</h4>
+<p>$39.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://steamcommunity-a.akamaihd.net/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwlcK3wiFO0POlPPNSIeOaB2qf19F6ueZhW2e2wEt-t2jcytf6dymSO1JxA5oiRecLsRa5kIfkYr-241aLgotHz3-rkGoXuUp8oX57">
+<h4>AK-47 | Asiimov</h4>
+<p>$89.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://community.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwiYbf_jdk4veqYaF7IfysCnWRxuF4j-B-Xxa_nBovp3Pdwtj9cC_GaAd0DZdwQu9fuhS4kNy0NePntVTbjYpCyyT_3CgY5i9j_a9cBkcCWUKV">
+<h4>AWP | Dragon Lore</h4>
+<p>$999.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2497633562">
+<h4>M4A4-S | Icarius</h4>
+<p>$749.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/7993039096">
+<h4>GLOCK-18 | Gamma Doppler</h4>
+<p>$150.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_rubber_light_large.5836c38d3037a5a1f90ffdc8c9d0b94367ca8efd.png">
+<h4>AK-47 | Vulcan</h4>
+<p>$119.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1_hyper_beast_light_large.31850937661935a062d5f6faf5a1f02fdb90b861.png">
+<h4>M4A1-S | Hyper Beast</h4>
+<p>$54.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="https://skins-cdn.hltv.org/skin/nTCvrxb8jn63wVwOgUjfjk.png">
+<h4>Skeleton Knife | Doppler</h4>
+<p>$499.999</p>
+<button>Agregar al carrito</button>
+</div>
+
+</div>

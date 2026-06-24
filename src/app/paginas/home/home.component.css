@@ -1,7 +1,60 @@
+.hero-text{
+
+position:absolute;
+
+left:20px;
+
+top:100px;
+
+z-index:10;
+
+}
+
+.hero-text h1{
+
+font-size:70px;
+
+color:#000000;
+
+font-weight:800;
+
+}
+
+.hero-text p{
+
+color:#050504;
+
+font-size:20px;
+
+}
+
+.btn-hero{
+
+background:#FF8A00;
+
+border:none;
+
+padding:14px 34px;
+
+border-radius:10px;
+
+color:rgb(0, 0, 0);
+
+margin-top:15px;
+
+
+}
+
+.btn-hero:hover{
+
+transform:translateY(-2px);
+
+}
+
 /*Estilo general*/
 body{
     background-color: #222;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
 }
 
@@ -18,8 +71,8 @@ body{
 /*estilo para las tarjetas*/
 .card{
     width: 18rem;
-    background-color: #333;
-    color: white;
+    background-color: #bd5109;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -29,7 +82,7 @@ body{
 /* Efecto hover de la tarjeta*/
 .card:hover{
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255,255,0.2);
+    box-shadow: 0 8px 16px rgba(238, 3, 3, 0.2);
 }
 
 /*Imagen dentro de las tarjetas*/
@@ -41,14 +94,14 @@ body{
 
 /* estilo del boton*/
 .card .btn{
-    background-color: yellow;
-    color:#222;
+    background-color: rgb(20, 20, 17);
+    color:#f34500;
     border:none;
     transition: background 0.3s ease-in-out;
 }
 
 .card .btn:hover{
-    background-color: yellow;
+    background-color: rgb(252, 134, 0);
 }
 /* Responsividad: en pantallas chicas */
 @media (max-width: 600px){
@@ -56,4 +109,95 @@ body{
         flex-direction: column;
         align-items:center;
     }
+}
+.carousel-item img{
+
+max-height:220px;
+padding-left: 160px;
+
+object-fit:contain;
+}
+.carousel{
+
+height:450px;
+
+}
+.carousel-inner{
+
+padding-top:60px;
+
+}
+
+.carousel-caption h5{
+
+color:#000000;
+
+font-size:36px;
+
+font-weight:700;
+
+}
+.card{
+    
+
+background:#1B1F2A;
+
+border:none;
+
+border-radius:18px;
+
+overflow:hidden;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 0 25px
+rgba(255,138,0,.35);
+
+
+}
+
+.card-title{
+
+color:rgb(241, 99, 5);
+
+}
+
+.card-text{
+
+color:#f35f0a;
+
+}
+.carousel{
+
+    height:550px;
+
+    display:flex;
+    padding-left:350px;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    180deg,
+    #d66000 0%,
+    #0F1115 100%
+    );
+
+}
+.carousel p{
+
+    color:#110e0e;
+
+    font-size:18px;
+
 }

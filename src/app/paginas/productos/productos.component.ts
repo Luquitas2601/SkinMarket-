@@ -23,6 +23,7 @@ export class ProductosComponent {
     }
   ]
   constructor(private carritoService: CarritoService){}
+  
 
   //Metodo para agregar un producto
 

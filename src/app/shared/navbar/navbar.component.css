@@ -1,0 +1,57 @@
+.navbar-skin{
+
+height:90px;
+
+background:#0F1115;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 80px;
+
+border-bottom:
+1px solid
+rgba(255,138,0,.2);
+
+}
+
+.logo{
+
+color:#FF8A00;
+
+font-size:34px;
+
+font-weight:800;
+
+cursor:pointer;
+
+}
+
+nav{
+
+display:flex;
+
+gap:40px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:rgb(97, 39, 5);
+
+font-size:18px;
+
+transition:.2s;
+
+}
+
+nav a:hover{
+
+color:#FF8A00;
+
+}
