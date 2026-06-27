@@ -14,18 +14,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
-            <label for="telefono" class="form-label fw-semibold">Telefono <span class="text-danger">*</span></label>
-            <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                <input id="telefono" formControlName="telefono" class="form-control"
-                    placeholder="Ej: +54 9 11 1234 5678">
-            </div>
-            <div *ngIf="formularioCompra.get('telefono')?.touched && formularioCompra.get('telefono')?.invalid"
-                class="form-text text danger">
-                El telefono es obligatorio.
-            </div>
-        </div>
+       
 
         <div class="mb-3">
             <label for="correo" class="form-label fw-semibold">Correo Electronico <span
@@ -41,47 +30,8 @@
             </div>
         </div>
 
-        <div class="mb-3">
-            <label for="direccion" class="form-label fw-semibold">Direccion <span class="text-danger">*</span></label>
-            <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
-                <input id="direccion" formControlName="direccion" class="form-control"
-                    placeholder="Calle, numero, piso, depto" />
-            </div>
-            <div *ngIf="formularioCompra.get('direccion')?.touched && formularioCompra.get('direccion')?.invalid"
-                class="form-text text danger">
-                La direccion es obligatorio.
-            </div>
-        </div>
-        <div class="row g-3 mb-3">
-            <div class="col-md-4">
-                <label for="ciudad" class="form-label fw-semibold">Ciudad <span class="text-danger">*</span></label>
-                <input id="ciudad" formControlName="ciudad" class="form-control" placeholder="EJ Buenos aires">
-                <div *ngIf="formularioCompra.get('cuidad')?.touched && formularioCompra.get('cuidad')?.invalid"
-                    class="form-text text danger">
-                    La ciudad es obligatoria.
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="provincia" class="form-label fw-semibold">provincia <span
-                        class="text-danger">*</span></label>
-                <input id="provincia" formControlName="provincia" class="form-control" placeholder="EJ Buenos aires">
-                <div *ngIf="formularioCompra.get('provincia')?.touched && formularioCompra.get('provincia')?.invalid"
-                    class="form-text text danger">
-                    La provincia es obligatoria.
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <label for="codigoPostal" class="form-label fw-semibold">Codigo Postal<span
-                        class="text-danger">*</span></label>
-                <input id="codigoPostal" formControlName="codigoPostal" class="form-control" placeholder="EJ: 1428">
-                <div *ngIf="formularioCompra.get('codigoPostal')?.touched && formularioCompra.get('codigoPostal')?.invalid"
-                    class="form-text text danger">
-                    El codigo postal es obligatorio.
-                </div>
-            </div>
-        </div>
+   
+      
 
         <div class="mb-3">
             <label for="metodoPago" class=" form-label fw-semibold">Metdo de Pago <span
@@ -100,7 +50,7 @@
         </div>
         <div class="d-flex justify-content-between align-items-center my-4">
             <div>
-                <p>Envio: ${{envio.toFixed(2)}}</p>
+                
                 <p><strong>Total a Pagar : ${{calcularTotal() | number: '1.2-2'}}</strong></p>
             </div>
             <button type="submit" class="btn btn-primary">Finalizar Compra</button>
