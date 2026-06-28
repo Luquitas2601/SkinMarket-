@@ -1,0 +1,85 @@
+.contacto{
+
+min-height:100vh;
+
+background:#070B12;
+
+color:white;
+
+padding:100px 40px;
+
+text-align:center;
+
+}
+
+.contacto h1{
+
+color:#FF8A00;
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.contacto p{
+
+font-size:20px;
+
+color:#BDBDBD;
+
+}
+
+.redes{
+
+margin-top:60px;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.redes a{
+
+width:220px;
+
+padding:25px;
+
+background:#171C26;
+
+border-radius:18px;
+
+text-decoration:none;
+
+color:white;
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+.redes a:hover{
+
+transform:translateY(-6px);
+
+border:1px solid #FF8A00;
+
+}
+
+.redes i{
+
+display:block;
+
+font-size:45px;
+
+color:#FF8A00;
+
+margin-bottom:12px;
+
+}
