@@ -50,6 +50,7 @@ export class CarritoComponent implements OnInit{
   irAFormularioCompra(){
     // Redirige al usuario a la ruta '/compra', donde se encuentra el formulario para finalizar la compra
     this.router.navigate(['/compra']);
+    
   }
 
   // Calcular el total del carrito de compras  

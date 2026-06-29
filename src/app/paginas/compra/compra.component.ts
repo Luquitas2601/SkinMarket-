@@ -45,12 +45,7 @@ ngOnInit(): void {
   //formulario con los campos requeridos y validadores
   this.formularioCompra = this.fb.group({
     nombre: ['', Validators.required],
-    direccion: ['', Validators.required],
     correo: ['', [Validators.required, Validators.email]],
-    telefono: ['', Validators.required],
-    codigoPostal: ['', Validators.required],
-    ciudad: ['', Validators.required],
-    provincia: ['', Validators.required],
     metodoPago: ['', Validators.required]
   });
 }
